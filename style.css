@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-image: url(./images/taj.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(./images/faisal1.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    filter: brightness(90%);
+
+}
+
+nav {
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo {
+    width: 25%;
+    text-align: center;
+    /* background-color: red; */
+}
+
+nav .menu {
+    width: 40%;
+    /* background-color: yellow; */
+    justify-content: space-around;
+    display: flex;
+}
+
+nav .menu a {
+    width: 25%;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+section h3 {
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: bold;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+    font-weight: 600;
+}
+
+section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: blue;
+}
+
+section .button {
+    background-color: #fff;
+    color: #000;
+}
+
+.btnone:hover {
+    background: #00b894;
+    color: white;
+}
+
+section .buttontwo {
+    background-color: #00b894;
+    color: #fff;
+}
+
+.btntwo:hover {
+    background: #fff;
+    color: #000;
+}
+
+.change_content:after {
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+
+/* @keyframes changetext { */
+/* 0%{content:"FAISAL MOSQUE";} */
+/* }  */
+@keyframes changetext {
+    0% {
+        content: "Faisal Mosque";
+    }
+
+    20% {
+        content: "IslamAbad";
+    }
+
+    35% {
+        content: "Lahore";
+    }
+
+    60% {
+        content: "Karachi";
+    }
+
+    80% {
+        content: "Hunza";
+    }
+
+    100% {
+        content: "Kashmeer";
+    }    
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
